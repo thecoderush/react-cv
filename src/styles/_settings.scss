@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'MobileFont';
+    src: url('./fonts/MobileFont.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'ComputerPixel';
+    src: url('./fonts/ComputerPixel7.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'MerchantCopy';
+    src: url('./fonts/MerchantCopy.ttf') format("truetype");
+}
+
+$font-1: 'MobileFont', cursive;
+$font-2: 'ComputerPixel', sans-serif;
+$font-3: 'MerchantCopy', serif;
+
+$color-1: #2a1d52;
+$color-2: #6c77f4;
+$color-3: rgb(99, 164, 233);
+$color-4: #4fedd2;
+$color-5: #36d0ea;
+$white: #ddd;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px $black;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 1rem auto;
+    max-width: 1200px;
+    font-family: $font-1;
+    color: $black;
+}
+button {
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+a:visted {
+    color: $black;
+}
+.home, .knowledges, .portfolio, .contact {
+    display: flex;
+
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent {
+    margin-left: .4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}

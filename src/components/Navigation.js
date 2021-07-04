@@ -62,7 +62,7 @@ const Navigation = () => {
                     </li>
                 </ul>
                 <div className="signature">
-                    <p>thecoderush - 2021</p>
+                    <p>thecoderush <i className="far fa-copyright"></i> - 2021</p>
                 </div>
             </div>
         </div>
