@@ -7,7 +7,7 @@ const Navigation = () => {
             <div className="id">
                 <div className="idContent">
                     <img src="./media/thecoderush_icon.png" alt="profil-picture" />
-                    <h3>thecoderush</h3>
+                    <div className="name">thecoderush</div>
                 </div>
             </div>
             <div className="navigation">
